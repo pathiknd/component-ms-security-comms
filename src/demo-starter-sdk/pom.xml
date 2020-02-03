@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>demo.ms-security-comms-arch</groupId>
+    <artifactId>parent-project</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  
+  <artifactId>demo-starter-sdk</artifactId>
+  <name>demo-starter-sdk</name>
+  <description>Starter Project to add all depdencies</description>
+  <packaging>pom</packaging>
+  
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>demo.ms-security-comms-arch</groupId>
+  			<artifactId>api-common-util</artifactId>
+  			<version>${demo-release.version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>demo.ms-security-comms-arch</groupId>
+  			<artifactId>rate-service-sdk</artifactId>
+  			<version>${demo-release.version}</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  
+</project>

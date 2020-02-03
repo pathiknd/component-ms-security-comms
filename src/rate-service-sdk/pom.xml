@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>demo.ms-security-comms-arch</groupId>
+    <artifactId>parent-project</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  
+  <artifactId>rate-service-sdk</artifactId>
+  <name>rate-service-sdk</name>
+  <description>Rate Service SDK Library</description>
+  <packaging>jar</packaging>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>demo.ms-security-comms-arch</groupId>
+  		<artifactId>api-common-util</artifactId>
+  		<version>0.0.1</version>
+  	</dependency>
+  </dependencies>
+  
+</project>

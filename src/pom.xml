@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>demo.ms-security-comms-arch</groupId>
+    <artifactId>parent-project</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+    
+    <properties>
+    	<java.version>1.8</java.version>
+    	<maven.test.skip>true</maven.test.skip>
+    	<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+    	<demo-release.version>0.0.1</demo-release.version>
+    </properties>
+    
+    <parent>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-parent</artifactId>
+    	<version>2.1.7.RELEASE</version>
+	</parent>
+	
+	<modules>
+		<module>auth-server</module>
+		<module>api-common-util</module>
+		<module>rate-service-sdk</module>
+		<module>rate-service</module>
+		<module>order-service</module>
+		<module>demo-starter-sdk</module>
+		<module>ms-store1-orders</module>
+		<module>ms-store1-rates</module>
+		<module>ms-store2</module>
+		<module>api-gateway</module>
+		<module>eureka-server</module>
+		<module>order-service-sdk</module>
+	</modules>
+	
+	<dependencies>
+  		<dependency>
+  			<groupId>org.springframework.boot</groupId>
+  			<artifactId>spring-boot-starter-web</artifactId>
+  		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>	
+	</dependencies>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>

@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>demo.ms-security-comms-arch</groupId>
+    <artifactId>parent-project</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  <artifactId>ms-store2</artifactId>
+  <name>ms-store2</name>
+  <description>Store2 Application</description>
+  <packaging>jar</packaging>
+  
+  <dependencies>
+ 	<dependency>
+  		<groupId>demo.ms-security-comms-arch</groupId>
+  		<artifactId>rate-service</artifactId>
+  		<version>${demo-release.version}</version>
+  	</dependency>
+ 	<dependency>
+  		<groupId>demo.ms-security-comms-arch</groupId>
+  		<artifactId>order-service</artifactId>
+  		<version>${demo-release.version}</version>
+  	</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework.cloud</groupId>
+    		<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>		  	  	
+  </dependencies>
+</project>
